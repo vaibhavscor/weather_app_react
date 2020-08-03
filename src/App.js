@@ -14,8 +14,8 @@ function App() {
 
   const search = evt => {
     if (evt.key === "Enter") {
-      // fetch()
-      axios.get(`$(api.base)weather?q=${query}&units=metric&APPID=${api.key}`)
+       fetch(`$(api.base)weather?q=${query}&units=metric&APPID=${api.key}`)
+      //axios.get(`$(api.base)weather?q=${query}&units=metric&APPID=${api.key}`)
         // getting json form response
         .then(res => res.json())
         .then(result => {
